@@ -9,7 +9,7 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
 ## 🚀 Instalación
 1. Clonar el repositorio:
    ```sh
-   git clone https://github.com/usuario/vivienda-plus.git
+   git clone https://github.com/Daniell2685/Vivienda_Plus.git
    ```
 2. Navegar al directorio del proyecto:
    ```sh
@@ -31,8 +31,7 @@ https://www.figma.com/design/B8M1PhxYGKopoPoRdQXVev/Vivienda-Plus?node-id=7-1031
 ### Descripción de la Estructura de Directorios
 La estructura del proyecto se organiza de la siguiente manera:
 
-vivienda-plus/
-│
+
 ├── index.html          # Página principal (inicio con carrusel, búsqueda, navbar y footer)
 ├── Pages/              # Carpeta para páginas adicionales (si las separaste así originalmente)
 │   ├── compra_depa.html  # Página detallada de un departamento (ejemplo)
