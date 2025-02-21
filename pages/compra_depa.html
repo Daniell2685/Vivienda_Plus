@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venta de Departamentos - Vivienda Plus</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-sell {
+            background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+            color: rgb(12, 48, 190);
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 56px; /* Ajuste para navbar fijo */
+        }
+        .hero-sell h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .department-sell-section {
+            padding: 40px 0;
+            background-color: var(--color-fondo);
+        }
+        .department-sell {
+            margin-bottom: 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-blanco);
+            overflow: hidden;
+        }
+        .department-image {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .department-content {
+            padding: 20px;
+        }
+        .department-content h3 {
+            color: var(--color-primario);
+            margin-bottom: 15px;
+        }
+        .department-content p, .department-content ul {
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+        .gallery-row {
+            margin-top: 20px;
+        }
+        .gallery-img {
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .btn-buy {
+            background-color: var(--color-secundario);
+            color: var(--color-blanco);
+            border: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .btn-buy:hover {
+            background-color: #e65c00;
+            color: var(--color-blanco);
+        }
+        .location-text {
+            margin-top: 20px;
+            color: var(--color-texto);
+        }
+        .lead-text {
+            font-size: 1.25rem;
+            color: var(--color-blanco);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
+        <div class="container">
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#departamentos">Departamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-sell">
+        <div class="department-content">
+            <h1>Comprar Departamento</h1>           
+        </div>
+    </header>
+
+    <section class="department-sell-section">
+        <div class="container">
+            <!-- Departamento 1: Moderno y Elegante -->
+            <div id="departamento-1" class="department-sell">
+                <img src="../images2/modernoyelegante.JPG" class="department-image" alt="Departamento Moderno y Elegante">
+                <div class="department-content">
+                    <h3>Departamento Moderno y Elegante</h3>
+                    <p>Este departamento combina diseño moderno con acabados de alta calidad, perfecto para quienes buscan elegancia y funcionalidad. Ubicado en una zona privilegiada.</p>
+                    <h3>Características</h3>
+                    <ul>
+                        <li><strong>Área:</strong> 120 m²</li>
+                        <li><strong>Dormitorios:</strong> 3</li>
+                        <li><strong>Baños:</strong> 2</li>
+                        <li><strong>Características adicionales:</strong> Balcón con vista, cocina equipada, área de lavandería.</li>
+                        <li><strong>Áreas comunes:</strong> Gimnasio, terraza comunitaria.</li>
+                    </ul>
+                    <h3>Precio</h3>
+                    <p>Desde $150,000. Opciones de financiamiento disponibles.</p>
+                    <h3>Ubicación</h3>
+                    <p class="location-text">JESUS MARIA, cerca de centros comerciales y avenidas principales.</p>
+                    <a href="../pages/cotizacion.html?departamento=Moderno y Elegante" class="btn-buy mt-3">Comprar</a>
+                </div>
+            </div>
+
+            <!-- Departamento 2: Espacioso y Luminoso -->
+            <div id="departamento-2" class="department-sell">
+                <img src="../images2/espaciosoyluminoso.JPG" class="department-image" alt="Departamento Espacioso y Luminoso">
+                <div class="department-content">
+                    <h3>Departamento Espacioso y Luminoso</h3>
+                    <p>Ideal para familias pequeñas, con espacios amplios y mucha luz natural, en una ubicación céntrica.</p>
+                    <h3>Características</h3>
+                    <ul>
+                        <li><strong>Área:</strong> 90 m²</li>
+                        <li><strong>Dormitorios:</strong> 2</li>
+                        <li><strong>Baños:</strong> 1</li>
+                        <li><strong>Características adicionales:</strong> Terraza grande, iluminación natural.</li>
+                        <li><strong>Áreas comunes:</strong> Jardín, sala de juegos.</li>
+                    </ul>
+                    <h3>Precio</h3>
+                    <p>Desde $80,000. Financiamiento flexible.</p>
+                  
+                    <h3>Ubicación</h3>
+                    <p class="location-text">Breña, cerca de servicios esenciales y transporte público.</p>
+                    <a href="../pages/cotizacion.html?departamento=Espacioso y Luminoso" class="btn-buy mt-3">Comprar</a>
+                </div>
+            </div>
+
+            <!-- Departamento 3: Minimalista y Funcional -->
+            <div id="departamento-3" class="department-sell">
+                <img src="../images2/minimalistayfuncionañ.JPG" class="department-image" alt="Departamento Minimalista y Funcional">
+                <div class="department-content">
+                    <h3>Departamento Minimalista y Funcional</h3>
+                    <p>Diseño eficiente para profesionales o parejas, con todo lo necesario en un espacio compacto.</p>
+                    <h3>Características</h3>
+                    <ul>
+                        <li><strong>Área:</strong> 70 m²</li>
+                        <li><strong>Dormitorios:</strong> 1</li>
+                        <li><strong>Baños:</strong> 1</li>
+                        <li><strong>Características adicionales:</strong> Área de trabajo, diseño moderno.</li>
+                        <li><strong>Áreas comunes:</strong> Gimnasio, área de coworking.</li>
+                    </ul>
+                    <h3>Precio</h3>
+                    <p>Desde $60,000. Opciones de pago accesibles.</p>
+                    <h3>Ubicación</h3>
+                    <p class="location-text">Surquillo, cerca de comercios y transporte.</p>
+                    <a href="../pages/cotizacion.html?departamento=Minimalista y Funcional" class="btn-buy mt-3">Comprar</a>
+                </div>
+            </div>
+
+            <!-- Departamento 4: Lujoso y Amplio -->
+            <div id="departamento-4" class="department-sell">
+                <img src="../images2/lujosoyamplio.JPG" class="department-image" alt="Departamento Lujoso y Amplio">
+                <div class="department-content">
+                    <h3>Departamento Lujoso y Amplio</h3>
+                    <p>Un departamento de lujo con acabados premium, ideal para familias grandes o inversores.</p>
+                    <h3>Características</h3>
+                    <ul>
+                        <li><strong>Área:</strong> 150 m²</li>
+                        <li><strong>Dormitorios:</strong> 4</li>
+                        <li><strong>Baños:</strong> 3</li>
+                        <li><strong>Características adicionales:</strong> Piscina privada, balcón, cocina premium.</li>
+                        <li><strong>Áreas comunes:</strong> Spa, gimnasio, terraza.</li>
+                    </ul>
+                    <h3>Precio</h3>
+                    <p>Desde $200,000. Financiamiento con inicial mínima.</p>
+                                   
+                    <h3>Ubicación</h3>
+                    <p class="location-text">Miraflores, zona residencial de alta demanda.</p>
+                    <a href="../pages/cotizacion.html?departamento=Lujoso y Amplio" class="btn-buy mt-3">Comprar</a>
+                </div>
+            </div>
+
+            <!-- Departamento 5: Duplex -->
+            <div id="departamento-5" class="department-sell">
+                <img src="../images2/duplex.JPG" class="department-image" alt="Departamento Duplex">
+                <div class="department-content">
+                    <h3>Departamento Duplex</h3>
+                    <p>Un espacio único en dos niveles, perfecto para quienes buscan versatilidad y estilo.</p>
+                    <h3>Características</h3>
+                    <ul>
+                        <li><strong>Área:</strong> 180 m²</li>
+                        <li><strong>Dormitorios:</strong> 4</li>
+                        <li><strong>Baños:</strong> 3</li>
+                        <li><strong>Características adicionales:</strong> Dos niveles, vistas espectaculares.</li>
+                        <li><strong>Áreas comunes:</strong> Piscina, salón de eventos.</li>
+                    </ul>
+                    <h3>Precio</h3>
+                    <p>Desde $180,000. Opciones de crédito hipotecario.</p>
+                  
+                    <h3>Ubicación</h3>
+                    <p class="location-text">Surquillo, cerca de áreas comerciales y recreativas.</p>
+                    <a href="../pages/cotizacion.html?departamento=Duplex" class="btn-buy mt-3">Comprar</a>
+                </div>
+            </div>
+
+            <!-- Departamento 6: Multifamiliar -->
+            <div id="departamento-6" class="department-sell">
+                <img src="../images2/multifamiliar.JPG" class="department-image" alt="Departamento Multifamiliar">
+                <div class="department-content">
+                    <h3>Departamento Multifamiliar</h3>
+                    <p>Diseñado para familias grandes, con seguridad y comodidad en un entorno familiar.</p>
+                    <h3>Características</h3>
+                    <ul>
+                        <li><strong>Área:</strong> 200 m²</li>
+                        <li><strong>Dormitorios:</strong> 4</li>
+                        <li><strong>Baños:</strong> 3</li>
+                        <li><strong>Características adicionales:</strong> Espacios familiares, seguridad 24/7.</li>
+                        <li><strong>Áreas comunes:</strong> Jardín, área infantil, gimnasio.</li>
+                    </ul>
+                    <h3>Precio</h3>
+                    <p>Desde $220,000. Financiamiento especial disponible.</p>
+                 
+                    <h3>Ubicación</h3>
+                    <p class="location-text">Breña, área residencial con fácil acceso a servicios.</p>
+                    <a href="../pages/cotizacion.html?departamento=Multifamiliar" class="btn-buy mt-3">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2025 Vivienda Plus. Todos los derechos reservados.</p>
+            <p>Síguenos en:</p>
+            <a href="#" class="text-white me-3">Facebook</a>
+            <a href="#" class="text-white me-3">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Opcional: Añadir desplazamiento suave con JavaScript
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

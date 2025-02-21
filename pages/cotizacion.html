@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presupuesto - Vivienda Plus</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .form-floating label {
+            color: #6c757d;
+        }
+        .form-floating input, .form-floating select {
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+        }
+        .form-check-input:checked {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .detalle-presupuesto {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .detalle-presupuesto p {
+            margin: 5px 0;
+        }
+        .precio-base { color: #6c757d; }
+        .descuento { color: #dc3545; font-weight: bold; }
+        .subtotal { color: #495057; }
+        .igv { color: #ff9800; }
+        .cuota-inicial { color: #007bff; font-weight: bold; }
+        .monto-financiado { color: #17a2b8; }
+        .cuotas { color: #28a745; font-weight: bold; }
+        .total-final { color: #28a745; font-size: 1.25rem; font-weight: bold; }
+        .btn-grabar {
+            background-color: #28a745;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .btn-grabar:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="departamentos.html">Departamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Calcula tu Presupuesto</h2>
+            <p class="text-center mb-5">Personaliza y visualiza todos los detalles de tu presupuesto</p>
+            <div class="form-container">
+                <form id="presupuestoForm">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                <label for="nombre">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="departamento" onchange="calcularPresupuesto()">
+                                    <option value="">Selecciona un departamento</option>
+                                    <option value="moderno_elegante">Moderno y Elegante (60m², 2 baños - $95,000)</option>
+                                    <option value="espacioso_luminoso">Espacioso y Luminoso (90m², 3 baños - $130,000)</option>
+                                    <option value="minimalista_funcional">Minimalista y Funcional (45m², 1 baño - $70,000)</option>
+                                    <option value="lujoso_amplio">Lujoso y Amplio (120m², 4 baños - $200,000)</option>
+                                    <option value="multifamiliar">Multifamiliar (150m², 5 baños - $250,000)</option>
+                                </select>
+                                <label for="departamento">Departamento</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="cuotaInicialPorcentaje" min="10" max="50" value="20" onchange="calcularPresupuesto()">
+                                <label for="cuotaInicialPorcentaje">Cuota Inicial (%)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <select class="form-select" id="meses" onchange="calcularPresupuesto()">
+                                    <option value="1">1 mes (Sin cuotas)</option>
+                                    <option value="6">6 meses</option>
+                                    <option value="12">12 meses</option>
+                                    <option value="24">24 meses</option>
+                                </select>
+                                <label for="meses">Pagar en Meses</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="oferta" onchange="calcularPresupuesto()">
+                                <label class="form-check-label" for="oferta">Aplicar Oferta (10% descuento)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalle-presupuesto" id="detallePresupuesto">
+                        <h5>Detalles del Presupuesto</h5>
+                        <p class="precio-base"><strong>Precio Base:</strong> $0.00</p>
+                        <p class="descuento"><strong>Descuento (10%):</strong> $0.00</p>
+                        <p class="subtotal"><strong>Subtotal:</strong> $0.00</p>
+                        <p class="igv"><strong>IGV (18%):</strong> $0.00</p>
+                        <p class="total-final"><strong>Total con IGV:</strong> $0.00</p>
+                        <p class="cuota-inicial"><strong>Cuota Inicial (20%):</strong> $0.00</p>
+                        <p class="monto-financiado"><strong>Monto a Financiar:</strong> $0.00</p>
+                        <p class="cuotas"><strong>Cuotas Mensuales:</strong> Sin cuotas</p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-grabar">Grabar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2025 Vivienda Plus. Todos los derechos reservados.</p>
+            <p>Síguenos en:</p>
+            <a href="https://www.facebook.com/viviendaplus" class="text-white me-3">Facebook</a>
+            <a href="https://www.instagram.com/viviendaplus" class="text-white me-3">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        // Precios y características de los departamentos
+        const departamentosInfo = {
+            'moderno_elegante': { precio: 95000, metros: 60, banos: 2 },
+            'espacioso_luminoso': { precio: 130000, metros: 90, banos: 3 },
+            'minimalista_funcional': { precio: 70000, metros: 45, banos: 1 },
+            'lujoso_amplio': { precio: 200000, metros: 120, banos: 4 },
+            'multifamiliar': { precio: 250000, metros: 150, banos: 5 }
+        };
+
+        // Función para calcular y mostrar el presupuesto detallado
+        function calcularPresupuesto() {
+            const departamento = document.getElementById('departamento').value;
+            const meses = parseInt(document.getElementById('meses').value);
+            const oferta = document.getElementById('oferta').checked;
+            const cuotaInicialPorcentaje = parseFloat(document.getElementById('cuotaInicialPorcentaje').value) / 100 || 0.20;
+
+            const detallePresupuesto = document.getElementById('detallePresupuesto');
+
+            if (!departamento) {
+                detallePresupuesto.innerHTML = `
+                    <h5>Detalles del Presupuesto</h5>
+                    <p class="precio-base"><strong>Precio Base:</strong> $0.00</p>
+                    <p class="descuento"><strong>Descuento (10%):</strong> $0.00</p>
+                    <p class="subtotal"><strong>Subtotal:</strong> $0.00</p>
+                    <p class="igv"><strong>IGV (18%):</strong> $0.00</p>
+                    <p class="total-final"><strong>Total con IGV:</strong> $0.00</p>
+                    <p class="cuota-inicial"><strong>Cuota Inicial (${(cuotaInicialPorcentaje * 100)}%):</strong> $0.00</p>
+                    <p class="monto-financiado"><strong>Monto a Financiar:</strong> $0.00</p>
+                    <p class="cuotas"><strong>Cuotas Mensuales:</strong> Sin cuotas</p>
+                `;
+                return;
+            }
+
+            const info = departamentosInfo[departamento];
+            const presupuestoBase = info.precio;
+            const igv = 0.18; // 18% IGV
+            const descuento = oferta ? 0.10 : 0; // 10% descuento si aplica oferta
+
+            // Cálculos
+            const montoDescuento = presupuestoBase * descuento;
+            const montoConDescuento = presupuestoBase - montoDescuento;
+            const igvMonto = montoConDescuento * igv;
+            const montoConIGV = montoConDescuento + igvMonto;
+            const cuotaInicial = montoConIGV * cuotaInicialPorcentaje;
+            const montoFinanciado = montoConIGV - cuotaInicial;
+            const cuotaMensual = meses > 1 ? montoFinanciado / meses : 0;
+
+            // Actualizar el detalle del presupuesto
+            detallePresupuesto.innerHTML = `
+                <h5>Detalles del Presupuesto</h5>
+                <p class="precio-base"><strong>Precio Base:</strong> $${presupuestoBase.toFixed(2)}</p>
+                ${oferta ? `<p class="descuento"><strong>Descuento (10%):</strong> -$${montoDescuento.toFixed(2)}</p>` : '<p class="descuento"><strong>Descuento (10%):</strong> $0.00</p>'}
+                <p class="subtotal"><strong>Subtotal:</strong> $${montoConDescuento.toFixed(2)}</p>
+                <p class="igv"><strong>IGV (18%):</strong> $${igvMonto.toFixed(2)}</p>
+                <p class="total-final"><strong>Total con IGV:</strong> $${montoConIGV.toFixed(2)}</p>
+                <p class="cuota-inicial"><strong>Cuota Inicial (${(cuotaInicialPorcentaje * 100)}%):</strong> $${cuotaInicial.toFixed(2)}</p>
+                <p class="monto-financiado"><strong>Monto a Financiar:</strong> $${montoFinanciado.toFixed(2)}</p>
+                <p class="cuotas"><strong>Cuotas Mensuales:</strong> ${meses > 1 ? `${meses} cuotas de $${cuotaMensual.toFixed(2)}` : 'Sin cuotas'}</p>
+            `;
+        }
+
+        // Calcular presupuesto al cargar la página
+        calcularPresupuesto();
+
+        // Evento para el botón Grabar
+        document.getElementById('presupuestoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+
+            // Reiniciar el formulario después de grabar
+            form.reset();
+            calcularPresupuesto(); // Actualizar el presupuesto a los valores iniciales ($0.00)
+        });
+    </script>
+</body>
+</html>

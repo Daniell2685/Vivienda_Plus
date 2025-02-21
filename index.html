@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venta de Departamentos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <link rel="stylesheet" href="css/styles.css">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand"  href="#inicio">© 2025 Vivienda Plus.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#departamentos">Departamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        
+        <div class="container-fluid">
+            <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/brena.jpg" class="d-block w-100" alt="Bienvenido" style="object-fit: cover; height: 74vh;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Encuentra tu nuevo hogar</h1>
+                            <p class="lead">Departamentos con diseño exclusivo y en la mejor ubicación.</p>
+                            <a href="pages/departamentos.html" class="btn btn-primario btn-lg">Ver departamentos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/surquillo.jpg" class="d-block w-100" alt="Bienvenido" style="object-fit: cover; height: 74vh;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Encuentra tu nuevo hogar</h1>
+                            <p class="lead">Departamentos con diseño exclusivo y en la mejor ubicación.</p>
+                            <a href="pages/departamentos.html" class="btn btn-primario btn-lg">Ver departamentos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/miraflores.jpg" class="d-block w-100" alt="Bienvenido" style="object-fit: cover; height: 74vh;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Encuentra tu nuevo hogar</h1>
+                            <p class="lead">Departamentos con diseño exclusivo y en la mejor ubicación.</p>
+                            <a href="pages/departamentos.html" class="btn btn-primario btn-lg">Ver departamentos</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+     <!--Inicio Busqueda -->
+
+    <section class="busqueda text-center">
+        <div class="container">
+            <h2 class="text-white">Busca tu departamento ideal</h2>
+            <form class="row g-3 mt-3">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Ubicación">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Precio máximo</option>
+                        <option>$50,000</option>
+                        <option>$100,000</option>
+                        <option>$150,000</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Habitaciones</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3+</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primario w-50">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+     <!-- Fin de busqueda-->
+
+     <!-- Inicio tarjeta-->
+     <section id="departamentos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Departamentos Destacados</h2>
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-4">
+                    <div class="card departamento-card shadow-sm">
+                        <img src="images/tarjeta1.PNG" class="card-img-top img-fluid" alt="Departamento moderno y elegante">
+                        <div class="card-body">
+                            <h5 class="card-title">Moderno y Elegante</h5>
+                            <p class="card-text">3 habitaciones, 2 baños, balcón con vista.</p>
+                            <a href="pages/compra_depa.html#departamento-1" class="btn btn-primary">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 2 -->
+                <div class="col-md-4">
+                    <div class="card departamento-card shadow-sm">
+                        <img src="images/tarjeta2.PNG" class="card-img-top img-fluid" alt="Departamento espacioso y luminoso">
+                        <div class="card-body">
+                            <h5 class="card-title">Espacioso y Luminoso</h5>
+                            <p class="card-text">2 habitaciones, 1 baño, terraza grande.</p>
+                            <a href="pages/compra_depa.html#departamento-2" class="btn btn-primary">Ver mas</a>
+                                                                                 
+                            </div>
+
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 3 -->
+                <div class="col-md-4">
+                    <div class="card departamento-card shadow-sm">
+                        <img src="images/tarjeta3.PNG" class="card-img-top img-fluid" alt="Departamento minimalista y funcional">
+                        <div class="card-body">
+                            <h5 class="card-title">Minimalista y Funcional</h5>
+                            <p class="card-text">1 habitación, 1 baño, área de trabajo.</p>
+                            <a href="pages/compra_depa.html#departamento-3" class="btn btn-primary">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-md-4">
+                    <div class="card departamento-card shadow-sm">
+                        <img src="images/tarjeta4.JPG" class="card-img-top img-fluid" alt="Departamento lujoso y amplio">
+                        <div class="card-body">
+                            <h5 class="card-title">Lujoso y Amplio</h5>
+                            <p class="card-text">4 habitaciones, 3 baños, piscina privada.</p>
+                            <a href="pages/compra_depa.html#departamento-4" class="btn btn-primary">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Tarjeta 5  -->
+                 <div class="col-md-4">
+                    <div class="card departamento-card shadow-sm">
+                        <img src="images/tarjeta5.JPG" class="card-img-top img-fluid" alt="Departamento lujoso y amplio">
+                        <div class="card-body">
+                            <h5 class="card-title">Duplex</h5>
+                            <p class="card-text">4 habitaciones, 3 baños, piscina privada.</p>
+                            <a href="pages/compra_depa.html#departamento-5" class="btn btn-primary">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Tarjeta 6-->
+                 <div class="col-md-4">
+                    <div class="card departamento-card shadow-sm">
+                        <img src="images/tarjeta6.JPG" class="card-img-top img-fluid" alt="Departamento lujoso y amplio">
+                        <div class="card-body">
+                            <h5 class="card-title">Multifamiliar</h5>
+                            <p class="card-text">4 habitaciones, 3 baños, piscina privada.</p>
+                            <a href="pages/compra_depa.html#departamento-6" class="btn btn-primary">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="testimonios text-center py-5">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <p class="lead">Testimonios de quienes confiaron en nosotros.</p>
+            <div class="row">
+                <!-- Testimonio 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonio-wrapper">
+                        <img src="images/testimonio1.PNG" alt="Foto de Carlos M." class="img-fluid rounded-circle mb-3" style="width: 300px; height: 300px; object-fit: cover;">
+                        <blockquote class="blockquote">
+                            <p>"Increíble servicio, todo fue rápido y seguro."</p>
+                            <footer class="blockquote-footer">Carlos M.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonio-wrapper">
+                        <img src="images/testimonio2.PNG" alt="Foto de Ana L." class="img-fluid rounded-circle mb-3" style="width: 300px; height: 300px; object-fit: cover;">
+                        <blockquote class="blockquote">
+                            <p>"La calidad de los departamentos superó mis expectativas."</p>
+                            <footer class="blockquote-footer">Ana L.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonio-wrapper">
+                        <img src="images/testimonio3.PNG" alt="Foto de Diego R." class="img-fluid rounded-circle mb-3" style="width: 300px; height: 300px; object-fit: cover;">
+                        <blockquote class="blockquote">
+                            <p>"El proceso de compra fue muy fácil y el equipo muy colaborador."</p>
+                            <footer class="blockquote-footer">Diego R.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>© 2025 Vivienda Plus. Todos los derechos reservados.</p>
+            <p>Síguenos en:</p>
+            <a href="#" class="text-white me-3">Facebook</a>
+            <a href="#" class="text-white me-3">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
