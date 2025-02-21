@@ -1,7 +1,7 @@
 # 🏡 Vivienda Plus
 
 ## 📌 Imagen Representativa
-![Vivienda Plus](https://via.placeholder.com/1000x500)
+![Vivienda Plus] https://daniell2685.github.io/Vivienda_Plus/index.html#inicio
 
 ## 📖 Descripción
 Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotización de departamentos en diferentes distritos. Ofrece una experiencia de usuario optimizada con información detallada sobre inmuebles, testimonios de clientes y herramientas de cotización en línea.
@@ -155,7 +155,7 @@ Ser la plataforma líder en información y cotización de viviendas en la regió
 - Actualizaciones periódicas para mejorar la funcionalidad y diseño.
 
 ## 📞 Contacto
-- **Email:** info@viviendaplus.com
-- **Teléfono:** +51 999 999 999
+- **Email:** daniel.valiente@tecsup.edu.pe
+- **Teléfono:** +51 943432411
 - **Redes Sociales:** [Facebook](https://facebook.com/viviendaplus), [Instagram](https://instagram.com/viviendaplus)
 
