@@ -33,7 +33,43 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
 
 [Link Maquetacion](https://www.figma.com/design/B8M1PhxYGKopoPoRdQXVev/Vivienda-Plus?node-id=7-1031&p=f)
 
+# Estructura del Proyecto
 
+📂 css
+   📄 styles.css
+📂 images
+   📄 brena.jpg
+   📄 miraflores.jpg
+   📄 surquillo.jpg
+   📄 tarjeta1.1.PNG
+   📄 tarjeta1.2.jpg
+   📄 tarjeta1.PNG
+   📄 tarjeta2.PNG
+   📄 tarjeta3.PNG
+   📄 tarjeta4.JPG
+   📄 tarjeta5.JPG
+   📄 tarjeta6.JPG
+   📄 testimonio1.PNG
+   📄 testimonio2.PNG
+   📄 testimonio3.PNG
+📂 images2
+   📄 duplex.JPG
+   📄 espaciosoyluminoso.JPG
+   📄 lujosoyamplio.JPG
+   📄 minimalistayfuncionañ.JPG
+   📄 modernoyelegante.JPG
+   📄 modernoyelegante1.JPG
+   📄 multifamiliar.JPG
+📂 js
+   📄 script.js
+📂 pages
+   📄 compra_depa.html
+   📄 contacto.html
+   📄 cotizacion.html
+   📄 departamentos.html
+   📄 testimonios.html
+📄 index.html # Página principal (inicio con carrusel, búsqueda, navbar y footer)
+📄 README.md
 
 ## 📄 Introducción
 Vivienda Plus es una plataforma web que ofrece información detallada sobre departamentos en venta, con una interfaz intuitiva y opciones de cotización en línea.
