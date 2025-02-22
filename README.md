@@ -34,11 +34,11 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
 [Link Maquetacion](https://www.figma.com/design/B8M1PhxYGKopoPoRdQXVev/Vivienda-Plus?node-id=7-1031&p=f)
 
 
-# Descripción de la Estructura de Directorios
+## Descripción de la Estructura de Directorios
 La estructura del proyecto se organiza de la siguiente manera:
 
 .
-└── Vivienda Plus/
+**└── Vivienda Plus/
     ├── index.html # Página principal (inicio con carrusel, búsqueda, navbar y footer)
     ├── Pages # Carpeta para páginas adicionales (si las separaste así originalmente)/
     │   ├── compra_depa.html # Página detallada para hacer presupuesto
@@ -74,7 +74,7 @@ La estructura del proyecto se organiza de la siguiente manera:
     │   ├── modernoyelegante.PNG    # Imagen de tarjeta de departamento
     │   ├── modernoyelegante1.PNG    # Imagen de tarjeta de departamento
     │   └── multifamiliar.PNG  #  Imagen de tarjeta de departamento  
-    └── README.md           # Opcional: archivo con documentación del proyecto
+    └── README.md           # Opcional: archivo con documentación del proyecto**
 
 
 ## 📄 Introducción
