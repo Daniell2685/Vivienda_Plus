@@ -35,6 +35,8 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
 
 # Estructura del Proyecto
 
+# Estructura del Proyecto
+
 📂 css
    📄 styles.css
 📂 images
@@ -68,8 +70,9 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
    📄 cotizacion.html
    📄 departamentos.html
    📄 testimonios.html
-📄 index.html # Página principal (inicio con carrusel, búsqueda, navbar y footer)
+📄 index.html
 📄 README.md
+📄 tree.md
 
 ## 📄 Introducción
 Vivienda Plus es una plataforma web que ofrece información detallada sobre departamentos en venta, con una interfaz intuitiva y opciones de cotización en línea.
