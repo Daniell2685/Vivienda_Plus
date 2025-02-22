@@ -1,6 +1,6 @@
 # 🏡 Vivienda Plus
 
-## 📌 Imagen Representativa
+## 📌 Pagina Web con Github pages
 https://daniell2685.github.io/Vivienda_Plus/index.html#inicio
 
 
