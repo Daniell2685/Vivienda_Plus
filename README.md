@@ -29,6 +29,9 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
 [Link Maquetacion](https://www.figma.com/design/B8M1PhxYGKopoPoRdQXVev/Vivienda-Plus?node-id=7-1031&p=f)
 
 
+## 📄 Integrantes:
+1. Valiente Cruz, Daniel.
+2. Flores Flores, Wilwer.
 
 ## 📄 Introducción
 Vivienda Plus es una plataforma web que ofrece información detallada sobre departamentos en venta, con una interfaz intuitiva y opciones de cotización en línea.
@@ -116,6 +119,9 @@ Ser la plataforma líder en información y cotización de viviendas en la regió
 
 ## 📞 Contacto
 - **Email:** daniel.valiente@tecsup.edu.pe
-- **Teléfono:** +51 943432411
+- **Email:** wilwer.flores@tecsup.edu.pe
+
+- **Teléfono:** +51 943 432 411
+- **Teléfono:** +51 994 602 733
 - **Redes Sociales:** [Facebook](https://facebook.com/viviendaplus), [Instagram](https://instagram.com/viviendaplus)
 
