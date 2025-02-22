@@ -1,7 +1,8 @@
 # 🏡 Vivienda Plus
 
 ## 📌 Imagen Representativa
-![Vivienda Plus] https://daniell2685.github.io/Vivienda_Plus/index.html#inicio
+
+https://daniell2685.github.io/Vivienda_Plus/index.html#inicio
 
 ## 📖 Descripción
 Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotización de departamentos en diferentes distritos. Ofrece una experiencia de usuario optimizada con información detallada sobre inmuebles, testimonios de clientes y herramientas de cotización en línea.
