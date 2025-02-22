@@ -34,6 +34,46 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
 [Link Maquetacion](https://www.figma.com/design/B8M1PhxYGKopoPoRdQXVev/Vivienda-Plus?node-id=7-1031&p=f)
 
 
+### Descripción de la Estructura de Directorios
+La estructura del proyecto se organiza de la siguiente manera:
+
+├── index.html          # Página principal (inicio con carrusel, búsqueda, navbar y footer)
+├── Pages/              # Carpeta para páginas adicionales (si las separaste así originalmente)
+│   ├── compra_depa.html  # Página detallada de un departamento (ejemplo)
+│   ├── departamentos.HTML  # Página de departamentos destacados
+│   ├── testimonios.html    # Página de testimonios
+│   ├── cotizacion.html     # Página de cotización/presupuesto
+│   └── Contacto.html       # Pagina de contacto
+├── css/                # Carpeta para estilos CSS
+│   └── styles.css      # Archivo principal de estilos
+├── js/                 # Carpeta para scripts JavaScript
+│   └── script.js       # Archivo principal de scripts
+├── images/             # Carpeta para imágenes
+│   ├── brena.jpg       # Imagen del carrusel
+│   ├── surquillo.jpg   # Imagen del carrusel
+│   ├── miraflores.jpg  # Imagen del carrusel
+│   ├── tarjeta1.1.PNG    # Imagen de tarjeta de departamento
+│   ├── tarjeta1.2.PNG    # Imagen de tarjeta de departamento
+│   ├── tarjeta1.PNG    # Imagen de tarjeta de departamento
+│   ├── tarjeta2.PNG  #  Imagen de tarjeta de departamento
+│   ├── tarjeta3.PNG  #  Imagen de tarjeta de departamento
+│   ├── tarjeta4.PNG  #  Imagen de tarjeta de departamento
+│   ├── tarjeta5.PNG  #  Imagen de tarjeta de departamento
+│   ├── tarjeta6.PNG  #  Imagen de tarjeta de departamento
+│   ├── tarjeta6.PNG  #  Imagen de tarjeta de departamento
+│   ├── testimonio1.PNG  # Imagen de testimonio
+│   ├── testimonio2.PNG  # Imagen de testimonio
+│   └── testimonio2.PNG # Imagen de testimonio
+├── images2/             # Carpeta para imágenes
+│   ├── duplex.jpg       # Imagen del carrusel
+│   ├── sespacioyluminoso.jpg   # Imagen del carrusel
+│   ├── lujosoyamplio.jpg  # Imagen del carrusel
+│   ├── minimalistayfuncional.PNG    # Imagen de tarjeta de departamento
+│   ├── modernoyelegante.PNG    # Imagen de tarjeta de departamento
+│   ├── modernoyelegante1.PNG    # Imagen de tarjeta de departamento
+│   └──multifamiliar.PNG  #  Imagen de tarjeta de departamento     
+└── README.md           # Opcional: archivo con documentación del proyecto
+
 
 ## 📄 Introducción
 Vivienda Plus es una plataforma web que ofrece información detallada sobre departamentos en venta, con una interfaz intuitiva y opciones de cotización en línea.
