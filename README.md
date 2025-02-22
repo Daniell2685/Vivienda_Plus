@@ -1,8 +1,13 @@
 # 🏡 Vivienda Plus
 
+## 📄 Integrantes:
+1. Valiente Cruz, Daniel.
+
+2. Flores Flores, Wilwer.
+
+
 ## 📌 Pagina Web con Github pages
 [Pagina Vivienda Plus](https://daniell2685.github.io/Vivienda_Plus/index.html#inicio)
-
 
 
 ## 📖 Descripción
@@ -29,9 +34,6 @@ Vivienda Plus es una plataforma web diseñada para facilitar la compra y cotizac
 [Link Maquetacion](https://www.figma.com/design/B8M1PhxYGKopoPoRdQXVev/Vivienda-Plus?node-id=7-1031&p=f)
 
 
-## 📄 Integrantes:
-1. Valiente Cruz, Daniel.
-2. Flores Flores, Wilwer.
 
 ## 📄 Introducción
 Vivienda Plus es una plataforma web que ofrece información detallada sobre departamentos en venta, con una interfaz intuitiva y opciones de cotización en línea.
